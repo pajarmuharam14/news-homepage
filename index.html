@@ -10,18 +10,18 @@
     <link rel="stylesheet" href="/dist/output.css" />
     <title>Frontend Mentor | News homepage</title>
   </head>
-  <body>
-    <div class="nav-mobile left-[400px] bg-offwhite fixed h-screen w-[210px] z-10">
+  <body class="font-Inter">
+    <div class="nav-mobile left-[150px] bg-offwhite border fixed h-screen w-[210px] z-10 hidden">
       <div class="close-nav float-right mx-4 my-8">
         <img class="" src="./assets/images/icon-menu-close.svg" alt="" />
       </div>
       <nav>
-        <ul class="mx-5 mt-20">
-          <li class="my-4"><a href="#">Home</a></li>
-          <li class="my-4"><a href="#">New </a></li>
-          <li class="my-4"><a href="#">Popular</a></li>
-          <li class="my-4"><a href="#">Trending</a></li>
-          <li class="my-4"><a href="#">Categories</a></li>
+        <ul class="mx-5 mt-20 text-verydarkblue">
+          <li class="my-4 hover:text-softred"><a href="#">Home</a></li>
+          <li class="my-4 hover:text-softred"><a href="#">New </a></li>
+          <li class="my-4 hover:text-softred"><a href="#">Popular</a></li>
+          <li class="my-4 hover:text-softred"><a href="#">Trending</a></li>
+          <li class="my-4 hover:text-softred"><a href="#">Categories</a></li>
         </ul>
       </nav>
     </div>
@@ -30,7 +30,7 @@
         <img src="./assets/images/logo.svg" alt="" />
       </div>
       <div class="navigation mx-3 my-7">
-        <div class="hamburger-menu-nav cursor-pointer md:hidden">
+        <div class="hamburger-menu-nav my-1 cursor-pointer md:hidden">
           <img src="./assets/images/icon-menu.svg" alt="" />
         </div>
         <div class="nav-flex hidden">
@@ -46,17 +46,29 @@
         </div>
       </div>
     </header>
-    <!--   The Bright Future of Web 3.0? We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise? Read
-    more New Hydrogen VS Electric Cars Will hydrogen-fueled cars ever catch up to EVs? The Downsides of AI Artistry What are the possible adverse effects of on-demand AI image generation? Is VC Funding Drying Up? Private funding by VC firms
+    <main>
+      <div class="web-3">
+        <img class="md:hidden px-2" src="./assets/images/image-web-3-mobile.jpg" alt="" />
+        <img class="hidden md:block" src="./assets/images/image-web-3-desktop.jpg" alt="" />
+      </div>
+      <div class="title">
+        <h1 class="text-4xl mx-3 my-3 text-verydarkblue font-extrabold">The Bright Future of Web 3.0?</h1>
+      </div>
+      <div class="paragraph">
+        <p class="ml-3 mt-2 text-darkgrayishblue">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+        <button class="border bg-softred text-offwhite font-bold mx-3 my-7 py-3 px-10 hover:bg-verydarkblue cursor-pointer">Read more</button>
+      </div>
+    </main>
+    <!--      New Hydrogen VS Electric Cars Will hydrogen-fueled cars ever catch up to EVs? The Downsides of AI Artistry What are the possible adverse effects of on-demand AI image generation? Is VC Funding Drying Up? Private funding by VC firms
     is down 50% YOY. We take a look at what that means. 01 Reviving Retro PCs What happens when old PCs are given modern upgrades? 02 Top 10 Laptops of 2022 Our best picks for various needs and budgets. 03 The Growth of Gaming How the
     pandemic has sparked fresh opportunities. -->
     <script>
       document.querySelector(".hamburger-menu-nav").addEventListener("click", () => {
-        document.querySelector(".nav-mobile").classList.replace("left-[400px]", "left-[150px]");
+        document.querySelector(".nav-mobile").classList.replace("hidden", "block");
       });
 
       document.querySelector(".close-nav").addEventListener("click", () => {
-        document.querySelector(".nav-mobile").classList.replace("left-[150px]", "left-[400px]");
+        document.querySelector(".nav-mobile").classList.replace("block", "hidden");
       });
     </script>
   </body>
