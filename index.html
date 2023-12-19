@@ -26,64 +26,68 @@
       </nav>
     </div>
     <header class="flex justify-between">
-      <div class="logo mx-2 my-5">
+      <div class="logo mx-2 my-5 md:mt-16 md:mx-24">
         <img src="./assets/images/logo.svg" alt="" />
       </div>
       <div class="navigation mx-3 my-7">
         <div class="hamburger-menu-nav my-1 cursor-pointer md:hidden">
           <img src="./assets/images/icon-menu.svg" alt="" />
         </div>
-        <div class="nav-flex hidden">
-          <nav>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">New </a></li>
-              <li><a href="#">Popular</a></li>
-              <li><a href="#">Trending</a></li>
-              <li><a href="#">Categories</a></li>
+        <div class="nav-flex hidden md:block">
+          <nav class="mt-[44px] mx-24">
+            <ul class="flex">
+              <li class="mx-3 text-darkgrayishblue hover:text-softred"><a href="#">Home</a></li>
+              <li class="mx-3 text-darkgrayishblue hover:text-softred"><a href="#">New </a></li>
+              <li class="mx-3 text-darkgrayishblue hover:text-softred"><a href="#">Popular</a></li>
+              <li class="mx-3 text-darkgrayishblue hover:text-softred"><a href="#">Trending</a></li>
+              <li class="mx-3 text-darkgrayishblue hover:text-softred"><a href="#">Categories</a></li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
-    <main>
-      <div class="web-3">
-        <img class="md:hidden px-2" src="./assets/images/image-web-3-mobile.jpg" alt="" />
-        <img class="hidden md:block" src="./assets/images/image-web-3-desktop.jpg" alt="" />
+    <main class="flex flex-wrap">
+      <div class="md:w-[750px] md:ml-24 md:mt-6">
+        <div class="web-3">
+          <img class="md:hidden px-2" src="./assets/images/image-web-3-mobile.jpg" alt="" />
+          <img class="hidden md:block w-[750px]" src="./assets/images/image-web-3-desktop.jpg" alt="" />
+        </div>
+        <div class="md:flex">
+          <div class="title md:mt-2">
+            <h1 class="text-4xl mx-3 my-3 text-verydarkblue font-extrabold">The Bright Future of Web 3.0?</h1>
+          </div>
+          <div class="paragraph md:mt-3">
+            <p class="ml-3 mt-2 text-darkgrayishblue">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+            <button class="border bg-softred text-offwhite font-bold mx-3 my-7 py-3 px-10 md:py-4 md:px-16 hover:bg-verydarkblue cursor-pointer">Read more</button>
+          </div>
+        </div>
       </div>
-      <div class="title">
-        <h1 class="text-4xl mx-3 my-3 text-verydarkblue font-extrabold">The Bright Future of Web 3.0?</h1>
-      </div>
-      <div class="paragraph">
-        <p class="ml-3 mt-2 text-darkgrayishblue">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
-        <button class="border bg-softred text-offwhite font-bold mx-3 my-7 py-3 px-10 hover:bg-verydarkblue cursor-pointer">Read more</button>
-      </div>
-      <div class="bg-verydarkblue mx-2 my-3">
+      <div class="bg-verydarkblue mx-2 my-3 md:w-[360px] md:px-3 md:ml-8 md:mt-6">
         <div class="title">
-          <h2 class="text-softorange font-bold text-2xl px-6 py-6">New</h2>
+          <h2 class="text-softorange font-bold text-2xl md:text-4xl px-6 md:px-4 py-6">New</h2>
         </div>
         <div class="border-b mx-1 border-darkgrayishblue pb-8">
-          <h3 class="text-offwhite font-bold px-5 text-[18px]">Hydrogen VS Electric Cars</h3>
-          <p class="text-grayishblue pl-5 pt-2">Will hydrogen-fueled cars ever catch up to EVs?</p>
+          <h3 class="text-offwhite hover:text-softorange font-bold px-5 md:px-3 text-[18px] cursor-pointer">Hydrogen VS Electric Cars</h3>
+          <p class="text-grayishblue pl-5 md:pl-3 pt-2">Will hydrogen-fueled cars ever catch up to EVs?</p>
         </div>
         <div class="border-b mx-1 border-darkgrayishblue pt-6 pb-8">
-          <h3 class="text-offwhite font-bold px-5 text-[18px]">The Downsides of AI Artistry</h3>
-          <p class="text-grayishblue pl-5 pt-2">What are the possible adverse effects of on-demand AI image generation?</p>
+          <h3 class="text-offwhite hover:text-softorange font-bold px-5 md:px-3 text-[18px] cursor-pointer">The Downsides of AI Artistry</h3>
+          <p class="text-grayishblue pl-5 md:pl-3 pt-2">What are the possible adverse effects of on-demand AI image generation?</p>
         </div>
-        <div class="border-b mx-1 border-darkgrayishblue pt-6 pb-8">
-          <h3 class="text-offwhite font-bold px-5 text-[18px]">Is VC Funding Drying Up?</h3>
-          <p class="text-grayishblue pl-5 pt-2">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        <div class="mx-1 pt-6 pb-8 md:pb-0">
+          <h3 class="text-offwhite hover:text-softorange font-bold px-5 md:px-3 text-[18px] cursor-pointer">Is VC Funding Drying Up?</h3>
+          <p class="text-grayishblue pl-5 md:pl-3 pt-2">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
         </div>
       </div>
-      <div class="mt-10">
+      <div class="my-10 md:flex md:ml-20">
         <div class="flex mx-3 my-5">
           <div class="image">
             <img class="" src="./assets/images/image-retro-pcs.jpg" alt="" />
           </div>
           <div class="description ml-4">
-            <span class="text-grayishblue text-2xl font-extrabold">01</span>
-            <h3 class="text-verydarkblue font-bold text-[18px] mt-1">Reviving Retro PCs</h3>
-            <p class="text-darkgrayishblue mt-1">What happens when old PCs are given modern upgrades?</p>
+            <span class="text-grayishblue text-2xl md:text-4xl font-extrabold">01</span>
+            <h3 class="text-verydarkblue hover:text-softred font-bold text-[18px] mt-1 md:mt-4 cursor-pointer">Reviving Retro PCs</h3>
+            <p class="text-darkgrayishblue md:text-[18px] mt-1 md:mt-3">What happens when old PCs are given modern upgrades?</p>
           </div>
         </div>
         <div class="flex mx-3 my-5">
@@ -91,19 +95,19 @@
             <img class="" src="./assets/images/image-top-laptops.jpg" alt="" />
           </div>
           <div class="description ml-4">
-            <span class="text-grayishblue text-2xl font-extrabold">02</span>
-            <h3 class="text-verydarkblue font-bold text-[18px] mt-1">Top 10 Laptops of 2022</h3>
-            <p class="text-darkgrayishblue mt-1">Our best picks for various needs and budgets.</p>
+            <span class="text-grayishblue text-2xl md:text-4xl font-extrabold">02</span>
+            <h3 class="text-verydarkblue hover:text-softred font-bold text-[18px] mt-1 md:mt-4 cursor-pointer">Top 10 Laptops of 2022</h3>
+            <p class="text-darkgrayishblue md:text-[18px] mt-1 md:mt-3">Our best picks for various needs and budgets.</p>
           </div>
         </div>
         <div class="flex mx-3 my-5">
           <div class="image">
             <img class="" src="./assets/images/image-gaming-growth.jpg" alt="" />
           </div>
-          <div class="description ml-4">
-            <span class="text-grayishblue text-2xl font-extrabold">03</span>
-            <h3 class="text-verydarkblue font-bold text-[18px] mt-1">The Growth of Gaming</h3>
-            <p class="text-darkgrayishblue mt-1 border">How the pandemic has sparked fresh opportunities.</p>
+          <div class="description ml-2">
+            <span class="text-grayishblue text-2xl md:text-4xl font-extrabold">03</span>
+            <h3 class="text-verydarkblue hover:text-softred font-bold text-[18px] mt-1 md:mt-4 cursor-pointer">The Growth of Gaming</h3>
+            <p class="text-darkgrayishblue md:text-[18px] mt-1 md:mt-3">How the pandemic has sparked fresh opportunities.</p>
           </div>
         </div>
       </div>
