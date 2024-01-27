@@ -11,7 +11,7 @@
     <title>Frontend Mentor | News homepage</title>
   </head>
   <body class="font-Inter">
-    <div class="nav-mobile left-[150px] bg-offwhite border fixed h-screen w-[210px] z-10 hidden">
+    <div class="nav-mobile right-[-210px] bg-offwhite border fixed h-screen w-[210px] z-10 md:hidden duration-300">
       <div class="close-nav float-right mx-4 my-8">
         <img class="" src="./assets/images/icon-menu-close.svg" alt="" />
       </div>
@@ -115,11 +115,11 @@
     <!--                     -->
     <script>
       document.querySelector(".hamburger-menu-nav").addEventListener("click", () => {
-        document.querySelector(".nav-mobile").classList.replace("hidden", "block");
+        document.querySelector(".nav-mobile").style.right = "0";
       });
 
       document.querySelector(".close-nav").addEventListener("click", () => {
-        document.querySelector(".nav-mobile").classList.replace("block", "hidden");
+        document.querySelector(".nav-mobile").style.right = "-210px";
       });
     </script>
   </body>
